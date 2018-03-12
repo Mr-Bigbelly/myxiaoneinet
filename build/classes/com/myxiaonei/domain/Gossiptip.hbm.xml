@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-2-28 14:05:54 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.myxiaonei.domain.Gossiptip" table="gossiptip">
+        <id name="gtId" type="java.lang.Long">
+            <column name="gt_id" />
+            <generator class="identity" />
+        </id>
+        <property name="gtSendId" type="java.lang.Long">
+            <column name="gt_sendId" />
+        </property>
+        <property name="gtGetId" type="java.lang.Long">
+            <column name="gt_getId" />
+        </property>
+        <property name="gtUrl" type="string">
+            <column name="gt_url" length="512" />
+        </property>
+        <property name="gtDate" type="timestamp">
+            <column name="gt_date" length="19" />
+        </property>
+        <property name="gtStatus" type="java.lang.Integer">
+            <column name="gt_status" />
+        </property>
+    </class>
+</hibernate-mapping>

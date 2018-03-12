@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-2-28 14:05:54 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.myxiaonei.domain.Newsrelation" table="newsrelation">
+        <id name="nrId" type="java.lang.Long">
+            <column name="nr_id" />
+            <generator class="identity" />
+        </id>
+        <property name="nrNewsId" type="java.lang.Long">
+            <column name="nr_newsId" />
+        </property>
+        <property name="nrFriendId" type="java.lang.Long">
+            <column name="nr_friendId" />
+        </property>
+        <property name="nrStatus" type="java.lang.Integer">
+            <column name="nr_status" />
+        </property>
+    </class>
+</hibernate-mapping>

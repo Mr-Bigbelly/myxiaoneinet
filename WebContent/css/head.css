@@ -1,0 +1,32 @@
+.head{
+	height:110px;
+	width:1001px;
+	background-color: #3C568F;
+	margin:0 auto;//表示所有居中，上下没有边距	
+}
+.head .img1{
+width: 713px;
+float: left;
+}
+.head .img2{
+width: 280px;
+float: left;
+margin-left: 6px;
+}
+.head .img3{
+	float:left ;
+}
+
+.navi1{
+	float: right;
+	/*background-color: red;*/
+}
+.navi1 li{
+	float:left;
+	list-style-type:none;
+	color:#C3CDDF;
+	height: 33px;
+	width: 55px;
+	line-height: 33px;
+	text-align: center;
+}

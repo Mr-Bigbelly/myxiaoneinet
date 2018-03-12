@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-2-28 14:05:54 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.myxiaonei.domain.Jobinfo" table="jobinfo">
+        <id name="jiId" type="java.lang.Integer">
+            <column name="ji_id" />
+            <generator class="identity" />
+        </id>
+        <property name="jiName" type="string">
+            <column name="ji_name" length="34" />
+        </property>
+        <property name="jiJobId" type="java.lang.Integer">
+            <column name="ji_jobId" />
+        </property>
+    </class>
+</hibernate-mapping>

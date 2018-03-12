@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-2-28 14:05:54 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.myxiaonei.domain.News" table="news">
+        <id name="NId" type="java.lang.Long">
+            <column name="n_id" />
+            <generator class="identity" />
+        </id>
+        <property name="NTitle" type="string">
+            <column name="n_title" length="512" />
+        </property>
+        <property name="NHostId" type="java.lang.Long">
+            <column name="n_hostId" />
+        </property>
+        <property name="NContent" type="string">
+            <column name="n_content" length="512" />
+        </property>
+        <property name="NType" type="java.lang.Integer">
+            <column name="n_type" />
+        </property>
+        <property name="NDate" type="timestamp">
+            <column name="n_date" length="19" />
+        </property>
+    </class>
+</hibernate-mapping>

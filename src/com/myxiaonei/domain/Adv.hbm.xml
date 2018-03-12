@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-2-28 14:05:54 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.myxiaonei.domain.Adv" table="adv">
+        <id name="adId" type="java.lang.Integer">
+            <column name="ad_id" />
+            <generator class="identity" />
+        </id>
+        <property name="adName" type="string">
+            <column name="ad_name" length="64" />
+        </property>
+        <property name="adImgName" type="string">
+            <column name="ad_imgName" length="64" />
+        </property>
+        <property name="adUrl" type="string">
+            <column name="ad_url" length="128" />
+        </property>
+    </class>
+</hibernate-mapping>

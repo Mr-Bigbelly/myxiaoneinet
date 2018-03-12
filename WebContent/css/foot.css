@@ -1,0 +1,18 @@
+.foot{
+width: 1000px;
+margin: 0 auto;
+height: 80px;
+padding-top: 10px;
+border-top: 1px solid gray;
+}
+
+.navi2{
+	float: right;
+	/*background-color: red;*/
+}
+.navi2 li{
+	float:left;
+	list-style-type:none;
+	color:black;
+	width: 55px;
+}
